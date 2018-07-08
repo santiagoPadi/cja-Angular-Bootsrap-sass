@@ -6,7 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-
+ lis = [
+   {
+     'routerLink': 'home',
+    'name': 'Inicio'},
+   {
+     'routerLink': 'institute',
+     'name': 'Institución'},
+   {
+     'routerLink': 'ingreso',
+     'name': 'Ingreso CJA'},
+   {
+     'routerLink': 'calendar',
+     'name': 'Calendario'},
+   {
+     'routerLink': 'contact',
+     'name': 'Contactenos'}
+ ]
   constructor() {
   }
 

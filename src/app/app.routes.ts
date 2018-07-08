@@ -10,7 +10,7 @@ const app_routes: Routes = [
     {path: 'calendar', component: CalendarComponent},
     {path: 'contact', component: ContactComponent},
     {path: 'institute', component: InstituteComponent},
-    {path: 'ingress', component: IngresoComponent},
+    {path: 'ingreso', component: IngresoComponent},
     {path: '**', pathMatch: 'full', redirectTo: 'home'}
 
 ]

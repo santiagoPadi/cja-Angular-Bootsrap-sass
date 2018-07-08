@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./carrousel.component.scss']
 })
 export class CarrouselComponent implements OnInit {
+  url = './../../../../../assets/img/slider/'
+  carrouselSRC = [
+    `${this.url}slider2.jpg`,
+    `${this.url}slider3.jpg`
+  ]
 
   constructor() { }
 
