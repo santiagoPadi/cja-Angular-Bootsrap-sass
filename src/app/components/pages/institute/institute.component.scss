@@ -1,0 +1,26 @@
+$grayColor: #d2d2d2;
+$greenCjaColor:#154e2e;
+h2{
+    color: $greenCjaColor;
+}
+.main{
+    padding-top: 70px;
+    padding-bottom: 3%
+}
+section{
+    text-align: center;
+    .row{
+        margin-top: 1%;
+        .card{
+            border-color: $greenCjaColor
+        }
+    }
+    .pastoral, .viceDirector, .orientacion{
+        .card{
+            border-color: $grayColor
+        }
+    }
+}
+.card:hover{
+    box-shadow: 0 0 20px 1px $greenCjaColor
+}
