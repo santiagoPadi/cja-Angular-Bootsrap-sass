@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { url } from 'inspector';
+// import * as Jdata from './../../../../assets/jsons/navbarLis.json'
 
 @Component({
   selector: 'app-navbar',

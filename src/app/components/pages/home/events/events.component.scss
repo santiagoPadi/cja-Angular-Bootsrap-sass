@@ -1,6 +1,11 @@
 $grayColor: #d2d2d2;
+$greenCjaColor:#154e2e;
 section {
   font-family: inherit;
+  margin-top: 4%;
+  .card{
+    box-shadow: 0 0 2px 1px $greenCjaColor;
+  }
 }
 h1{
     font-size: 24px;
@@ -19,21 +24,67 @@ figure{
       top: 60%;
       left: 50%;
       transform: translate(-50%, -50%);
-      .day {
-        font-size: xx-large;
-        color: $grayColor;
-      };
-      .month {
-        font-size: large;
-        color: $grayColor;
-      }
-    }
+      color: $grayColor;
+    };
+}
+.eventName{
+  color: $greenCjaColor;
+  font-weight: bold;
+  text-align: center
 }
 figure:hover {
     svg{
-        color: #154e2e
+        color: $greenCjaColor
     };
+    .hour{
+      color: $greenCjaColor;
+      font-weight: bolder
+    }
 }
 .col{
     margin-left: 7%
+}
+@media handheld, (max-width: 770px){
+  .day{
+    font-size: large;
+  };
+  .month{
+    font-size: medium;
+  };
+  .hour{
+    font-size: large;
+  }
+}
+@media handheld, (min-width: 770px) {
+  .day {
+    font-size: xx-large;
+  };
+  .month {
+    font-size: large;
+  };
+  .hour{
+    font-size: x-large;
+  }
+}
+@media handheld, (max-width: 575px) {
+  .day {
+    font-size: 400%;
+  };
+  .month {
+    font-size: xx-large;
+  };
+  .hour{
+    font-size: xx-large;
+  }
+}
+@media handheld, (max-width: 320px) {
+  .day {
+    font-size: xx-large;
+  };
+  .month {
+    font-size: large;
+  };
+  .hour{
+    font-size: x-large;
+  }
 }

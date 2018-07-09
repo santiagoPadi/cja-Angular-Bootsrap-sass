@@ -7,11 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventsComponent implements OnInit {
   nextEvents = require('./../../../../../assets/jsons/nextEvents.json')
+  mouse = false
   constructor() {
     console.log(this.nextEvents.length)
   }
 
   ngOnInit() {
+  }
+  mouseIn() {
+    this.mouse = true
+  }
+  mouseOut() {
+    this.mouse = false
   }
 
 }
