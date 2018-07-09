@@ -1,0 +1,39 @@
+$grayColor: #d2d2d2;
+section {
+  font-family: inherit;
+}
+h1{
+    font-size: 24px;
+}
+figure{
+    position: relative;
+    text-align: center;
+    width: auto;
+    margin-top: 2%;
+    svg {
+      color: $grayColor;
+      width: 80%
+    };
+    .textCentered {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      .day {
+        font-size: xx-large;
+        color: $grayColor;
+      };
+      .month {
+        font-size: large;
+        color: $grayColor;
+      }
+    }
+}
+figure:hover {
+    svg{
+        color: #154e2e
+    };
+}
+.col{
+    margin-left: 7%
+}

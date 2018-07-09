@@ -5,8 +5,11 @@ img{
 }
 .sm-Social{
     .socialIcon {
-      box-shadow: 0 0 1em black;
-      border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+      
+    }
+    .socialIcon:hover{
+        box-shadow: 0 0 20px 1px rgba(0, 140, 186, 0.5);
     }
 }
 .socialIconIn {
@@ -23,7 +26,7 @@ footer{
     p{
         color: aliceblue
     }
-    a{
+    a:hover{
         text-decoration: underline aliceblue
     }
 }

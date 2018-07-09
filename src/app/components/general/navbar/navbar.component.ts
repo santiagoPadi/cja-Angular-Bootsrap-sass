@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { url } from 'inspector';
 
 @Component({
   selector: 'app-navbar',
@@ -6,23 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
- lis = [
-   {
-     'routerLink': 'home',
-    'name': 'Inicio'},
-   {
-     'routerLink': 'institute',
-     'name': 'Institución'},
-   {
-     'routerLink': 'ingreso',
-     'name': 'Ingreso CJA'},
-   {
-     'routerLink': 'calendar',
-     'name': 'Calendario'},
-   {
-     'routerLink': 'contact',
-     'name': 'Contactenos'}
- ]
+  lis = require('./../../../../assets/jsons/navbarLis.json')
   constructor() {
   }
 

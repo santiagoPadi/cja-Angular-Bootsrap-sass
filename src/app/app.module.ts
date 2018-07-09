@@ -12,6 +12,7 @@ import { FooterComponent } from './components/general/footer/footer.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { CarrouselComponent } from './components/pages/home/carrousel/carrousel.component';
 import { IngresoComponent } from './components/pages/ingreso/ingreso.component';
+import { EventsComponent } from './components/pages/home/events/events.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { IngresoComponent } from './components/pages/ingreso/ingreso.component';
     FooterComponent,
     HomeComponent,
     CarrouselComponent,
-    IngresoComponent
+    IngresoComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,
