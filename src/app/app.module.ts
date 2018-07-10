@@ -14,6 +14,7 @@ import { CarrouselComponent } from './components/pages/home/carrousel/carrousel.
 import { IngresoComponent } from './components/pages/ingreso/ingreso.component';
 import { EventsComponent } from './components/pages/home/events/events.component';
 import { AboutUsComponent } from './components/pages/institute/about-us/about-us.component';
+import { ManyanetianosComponent } from './components/general/footer/manyanetianos/manyanetianos.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { AboutUsComponent } from './components/pages/institute/about-us/about-us
     CarrouselComponent,
     IngresoComponent,
     EventsComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    ManyanetianosComponent
   ],
   imports: [
     BrowserModule,

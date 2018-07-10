@@ -23,6 +23,7 @@ footer{
 }
 .sazon{
     text-align: right;
+    align-self: right;
     p{
         color: aliceblue
     }
@@ -30,13 +31,22 @@ footer{
         text-decoration: underline aliceblue
     }
 }
+.figure{
+    width: 10%;
+}
+.sm-map{
+    text-align: right
+}
+.icon-map{
+    color: white
+}
 @media handheld, (max-width: 981px){
-    .lg-md-Social{
+    .lg-md-Social, .lg-map{
         display: none;
     }
 }
 @media handheld, (min-width: 981px) {
-  .sm-Social {
+  .sm-Social, .sm-map{
     display: none;
   }
 }
