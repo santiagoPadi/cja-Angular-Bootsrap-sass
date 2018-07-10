@@ -1,123 +1,66 @@
 <app-about-us></app-about-us>
 <section class="container main">
     <div class="card bigDad">
-<div class="row rector justify-content-center">
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="./../../../../assets/img/cja/Alex.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h6 class="card-subtitle mb-2 text-muted">Director general y representante legal</h6>
-      <p class="card-text">P. Alexander Díaz Guevara</p>
-    </div>
-  </div>
-</div>
-<section class="row pastoral justify-content-center">
-<div class="card-deck" >
-    <div class="card " style="width: 18rem;">
-      <div class="card-body">
-        <h6 class="card-subtitle mb-2 text-muted">Director de pastoral</h6>
-        <p class="card-text">P. Héctor Francisco Cruz, SF</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h6 class="card-subtitle mb-2 text-muted">Pastoralista</h6>
-        <p class="card-text">Hno. Walter Damián Distel, SF</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="row directors justify-content-center ">
-<div class="card-deck">
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h6 class="card-subtitle mb-2 text-muted">Director nivel inicial</h6>
-        <p class="card-text">Marcela Reynolds</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h6 class="card-subtitle mb-2 text-muted">Director nivel primario</h6>
-        <p class="card-text">María Fernanda Sívori</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h6 class="card-subtitle mb-2 text-muted">Director nivel secundario</h6>
-        <p class="card-text">P. Héctor Francisco Cruz, SF</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="row viceDirector justify-content-md-center">
-<div class="card-deck">
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h6 class="card-subtitle mb-2 text-muted">Vicedirector nivel primario</h6>
-        <p class="card-text">María Susana Fernández</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h6 class="card-subtitle mb-2 text-muted">Vicedirector nivel secundario</h6>
-        <p class="card-text">Prof. María Rita Garza</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="row secretary justify-content-md-center">
-<div class="card-deck">
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h6 class="card-subtitle mb-2 text-muted">Secretaría general</h6>
-        <p class="card-text">María Julia Massigoge</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h6 class="card-subtitle mb-2 text-muted">Secretaría inicial y primario</h6>
-        <p class="card-text">Marísa Ethel Alonso</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h6 class="card-subtitle mb-2 text-muted">Secretaría nivel secundario</h6>
-        <p class="card-text">Prof. Ángel Ignacio García Zurita</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="row orientacion justify-content-md-center">
-  <h2>Equipo de orientación escolar</h2>
-  <div class="row">
-    <div class="card-deck">
-      <div class="card" >
-        <div class="card-body">
-          <h6 class="card-subtitle mb-2 text-muted">Psicóloga</h6>
-          <p class="card-text">Lic. Dina Benavente</p>
+      <div class="row rector justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">{{jerarquia[0].director.titulo}}</h6>
+            <p class="card-text">{{jerarquia[0].director.name}}</p>
+          </div>
         </div>
       </div>
-      <div class="card" >
-        <div class="card-body">
-          <h6 class="card-subtitle mb-2 text-muted">Psicopedagoga</h6>
-          <p class="card-text">Lic. María Florencia Ambrosius</p>
+      <section class="row pastoral justify-content-center">
+        <div class="card-deck" >
+          <div class="card " style="width: 18rem;" *ngFor="let pastor of jerarquia[0].pastoral">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">{{pastor.titulo}}</h6>
+              <p class="card-text">{{pastor.name}}</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card" >
-        <div class="card-body">
-          <h6 class="card-subtitle mb-2 text-muted">Orientación Escolar</h6>
-          <p class="card-text">Prof. María Cecilia Kristensen</p>
+      </section>
+      <section class="row directors justify-content-center ">
+      <div class="card-deck">
+          <div class="card" style="width: 18rem;" *ngFor="let director of jerarquia[0].directores">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">{{director.titulo}}</h6>
+              <p class="card-text">{{director.name}}</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card" >
-        <div class="card-body">
-          <h6 class="card-subtitle mb-2 text-muted">Psicopedagoga</h6>
-          <p class="card-text">Lic. María Alejandra Damiani</p>
+      </section>
+      <section class="row viceDirector justify-content-md-center">
+        <div class="card-deck">
+          <div class="card" style="width: 18rem;" *ngFor="let vice of jerarquia[0].vicedirectores">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">{{vice.titulo}}</h6>
+              <p class="card-text">{{vice.name}}</p>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+      <section class="row secretary justify-content-md-center">
+      <div class="card-deck">
+          <div class="card" style="width: 18rem;" *ngFor="let secretaria of jerarquia[0].secretary">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">{{secretaria.titulo}}</h6>
+              <p class="card-text">{{secretaria.name}}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="row orientacion justify-content-md-center">
+        <h2>Equipo de orientación escolar</h2>
+        <div class="row">
+          <div class="card-deck">
+            <div class="card" *ngFor="let orientado of jerarquia[0].orientacion" >
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">{{orientado.titulo}}</h6>
+                <p class="card-text">{{orientado.name}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-  </div>
-</section>
-
-    </div>
-    
 </section>
