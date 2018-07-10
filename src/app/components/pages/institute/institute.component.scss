@@ -5,14 +5,27 @@ h2{
 }
 .main{
     padding-top: 70px;
-    padding-bottom: 3%
+    padding-bottom: 3%;
+    border-color: $grayColor;
+    border: 1%;
+    .bigDad{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
 }
+
 section{
     text-align: center;
     .row{
         margin-top: 1%;
+        margin-bottom: 1%;
         .card{
-            border-color: $greenCjaColor
+            border-color: $greenCjaColor;
+            img{
+                width: 286px;
+                height: 200px;
+            }
         }
     }
     .pastoral, .viceDirector, .orientacion{
