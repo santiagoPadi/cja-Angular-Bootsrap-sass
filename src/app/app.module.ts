@@ -13,6 +13,7 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { CarrouselComponent } from './components/pages/home/carrousel/carrousel.component';
 import { IngresoComponent } from './components/pages/ingreso/ingreso.component';
 import { EventsComponent } from './components/pages/home/events/events.component';
+import { AboutUsComponent } from './components/pages/institute/about-us/about-us.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { EventsComponent } from './components/pages/home/events/events.component
     HomeComponent,
     CarrouselComponent,
     IngresoComponent,
-    EventsComponent
+    EventsComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
