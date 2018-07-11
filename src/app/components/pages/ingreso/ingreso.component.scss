@@ -26,7 +26,6 @@
             };
             margin-top: 1%;
             margin-bottom: 1%;
-
         }
         
     };
@@ -42,5 +41,11 @@
         }
 
     }
+    @media handheld, (max-width: 996px) {
+        .download{
+          display: none;
+        }
+      }
+
     
 }
