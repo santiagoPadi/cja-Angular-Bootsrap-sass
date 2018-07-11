@@ -1,0 +1,46 @@
+.container{
+    margin-top: 1%;
+    text-align: center;
+    .texto{
+        margin:2%
+    }
+    button{
+        margin: 1%
+    }
+    .collapse{
+        h6{
+            color: green
+        };
+        ul{
+            li{
+                span{
+                    font-weight: bold;
+                }
+            }
+        };
+        .requisitos{
+            .row {
+              .card{
+                  margin: 1%
+              }
+            };
+            margin-top: 1%;
+            margin-bottom: 1%;
+
+        }
+        
+    };
+    .download{
+        height: 310px;
+        
+        .ss{
+            .sistem {
+            width: 90%;
+            height: 310px;
+            padding-left: 40px
+            }
+        }
+
+    }
+    
+}
