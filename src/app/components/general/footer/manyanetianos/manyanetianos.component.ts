@@ -6,76 +6,72 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./manyanetianos.component.scss']
 })
 export class ManyanetianosComponent implements OnInit {
+  src = './../../../../../assets/img/linksMayanetianos/'
   links = [
     {
-      'image': './../../../../../assets/img/linksMayanetianos/Sagrada Familia.png',
+      'image': `${this.src}Sagrada Familia.png`,
       'title': 'Hijos de la Sagrada Familia',
-      'link': 'www.manyanet.org',
+      'link': 'http://www.manyanet.org',
     },
     {
-      'image': '',
+      'image': `${this.src}manyanet.jpg`,
       'title': 'Revista Sagrada Familia',
-      'link': 'www.lasagradafamilia.net',
+      'link': 'http://www.lasagradafamilia.net',
     },
     {
-      'image': '',
-      'title': 'ONG Manyanet Solidario',
-      'link': 'www.manyanetsolidario.org',
-    },
-    {
-      'image': '',
+      'image': `${this.src}idiomas.png`,
       'title': 'Curso de Idiomas Padre Manyanet',
-      'link': 'www.idiomas.manyanet.org',
+      'link': 'http://www.idiomas.manyanet.org',
     },
     {
-      'image': '',
+      'image': `${this.src}error.png`,
       'title': 'Colegio Padre Manyanet de Barcelona',
-      'link': 'www.bcn.manyanet.org',
+      'link': 'http://www.bcn.manyanet.org',
     },
     {
-      'image': '',
+      'image': `${this.src}begues.jpg`,
       'title': 'Colegio San Luis de Begues',
-      'link': 'www.begues.manyanet.org',
+      'link': 'http://www.begues.manyanet.org',
     },
     {
-      'image': '',
+      'image': `${this.src}molins.jpg`,
       'title': 'Colegio San Miguel Arcángel de Molins de Rei',
-      'link': 'www.molins.manyanet.org',
+      'link': 'http://www.molins.manyanet.org',
     },
     {
-      'image': '',
+      'image': `${this.src}blanes.jpg`,
       'title': 'Colegio Santa María de Blanes',
-      'link': 'www.blanesmanyanet.org',
+      'link': 'http://www.blanesmanyanet.org',
     },
     {
-      'image': '',
+      'image': `${this.src}pintela.jpg`,
       'title': 'Colegio Padre Manyanet de Madrid',
-      'link': 'www.manyanet-alcobendas.org',
+      'link': 'https://www.alcobendas.manyanet.org/',
     },
     {
-      'image': '',
+      'image': `${this.src}error.png`,
       'title': 'Colegio Padre Manyanet de Medellín',
-      'link': 'www.manyanet.edu.co/sitio/',
+      'link': 'http://www.manyanet.edu.co/sitio/',
     },
     {
-      'image': '',
+      'image': `${this.src}error.png`,
       'title': 'Colegio Padre Manyanet de Reus',
-      'link': 'www.manyanet-reus.net',
+      'link': 'http://www.manyanet-reus.net',
     },
     {
-      'image': '',
+      'image': `${this.src}error.png`,
       'title': 'Colegio San Ramón de Penyafort',
-      'link': 'www.manyanet-vilafranca.org',
+      'link': 'http://www.manyanet-vilafranca.org',
     },
     {
-      'image': '',
+      'image': `${this.src}error.png`,
       'title': 'Colegio Padre Manyanet de Bogotá',
-      'link': 'www.colegiopadremanyanetbogota.edu.co',
+      'link': 'http://www.colegiopadremanyanetbogota.edu.co',
     },
     {
-      'image': '',
+      'image': `${this.src}chia.jpg`,
       'title': 'Colegio Padre Manyanet de Chía',
-      'link': 'www.manyanet-chia.org/',
+      'link': 'https://www.padremanyanet.edu.co/',
     },
   ]
 

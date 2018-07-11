@@ -1,5 +1,8 @@
 <!-- Large modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Paginas mayanetianas</button>
+<div class="justify-content-center" style="margin-top: 10%;">
+  <button type="button" class="btn btn-light" data-toggle="modal" data-target=".bd-example-modal-lg">Paginas mayanetianas</button>
+</div>
+
 
 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
@@ -13,7 +16,7 @@
       <div class="modal-body">
           <div class="card-columns">
               <div class="card" *ngFor="let ref of links">
-                <a [href]="ref.link">
+                <a [href]="ref.link" target="_blank">
                   <img class="card-img-top" [src]="ref.image" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">{{ref.title}}</h5>
